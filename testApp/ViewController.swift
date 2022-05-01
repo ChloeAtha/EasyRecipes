@@ -25,7 +25,7 @@ title = "Tips"
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "new") as? EntryViewController else {
             return
         }
-        vc.title = "New Note"
+        vc.title = "New Tip"
         vc.navigationItem.largeTitleDisplayMode
         vc.completion = { noteTitle, note in
             self.navigationController?.popToRootViewController(animated: true)
