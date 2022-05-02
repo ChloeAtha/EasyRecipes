@@ -19,6 +19,8 @@
 		BD4D5827281F0BFE00DCE06A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D5826281F0BFE00DCE06A /* DetailViewController.swift */; };
 		BD4D5829281F125E00DCE06A /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D5828281F125E00DCE06A /* Drinks.swift */; };
 		BD4D582B281F154000DCE06A /* Drinkss.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D582A281F154000DCE06A /* Drinkss.swift */; };
+		BD8B4C98281F840A0030153E /* MealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4C97281F840A0030153E /* MealListViewController.swift */; };
+		BD8B4C9A281F87100030153E /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4C99281F87100030153E /* MealDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		BD4D5826281F0BFE00DCE06A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BD4D5828281F125E00DCE06A /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		BD4D582A281F154000DCE06A /* Drinkss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinkss.swift; sourceTree = "<group>"; };
+		BD8B4C97281F840A0030153E /* MealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewController.swift; sourceTree = "<group>"; };
+		BD8B4C99281F87100030153E /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				BD4D5828281F125E00DCE06A /* Drinks.swift */,
 				BD4D582A281F154000DCE06A /* Drinkss.swift */,
 				BD4D5824281F094200DCE06A /* ListViewController.swift */,
+				BD8B4C97281F840A0030153E /* MealListViewController.swift */,
+				BD8B4C99281F87100030153E /* MealDetailViewController.swift */,
 				BD4D5826281F0BFE00DCE06A /* DetailViewController.swift */,
 				BD4D57FE281DE64F00DCE06A /* EntryViewController.swift */,
 				BD4D5800281DE65800DCE06A /* NotesViewController.swift */,
@@ -157,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4D57EF281DE55000DCE06A /* ViewController.swift in Sources */,
+				BD8B4C98281F840A0030153E /* MealListViewController.swift in Sources */,
 				BD4D5801281DE65800DCE06A /* NotesViewController.swift in Sources */,
 				BD4D5829281F125E00DCE06A /* Drinks.swift in Sources */,
+				BD8B4C9A281F87100030153E /* MealDetailViewController.swift in Sources */,
 				BD4D582B281F154000DCE06A /* Drinkss.swift in Sources */,
 				BD4D5825281F094200DCE06A /* ListViewController.swift in Sources */,
 				BD4D57FF281DE64F00DCE06A /* EntryViewController.swift in Sources */,
