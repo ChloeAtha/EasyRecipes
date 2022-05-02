@@ -32,10 +32,10 @@ class MealDetailViewController: UIViewController {
     
     func updateUserInterface() {
         mealLabel.text = meal.strMeal
-        mealTypeLabel.text = meal.strCategory
+        mealTypeLabel.text = meal.strTags
         recipietextView.text = meal.strInstructions
-        regionLabel.text = meal.strArea
-        descritionLabel.text = meal.strTags
+        regionLabel.text = meal.strCategory
+        descritionLabel.text = meal.strArea
         
         createIngredientsList()
         

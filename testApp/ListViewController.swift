@@ -26,6 +26,7 @@ class ListViewController: UIViewController, UITextFieldDelegate {
         
         tableView.delegate = self
         tableView.dataSource = self
+        title = "Drink Recipies"
 //        field.delegate = self
         drinks.getData {
             DispatchQueue.main.async {

@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
-title = "Tips"
+title = "Tips and Tricks"
     }
 
     @IBAction func didTapNewNote() {

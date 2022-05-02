@@ -18,6 +18,7 @@ class MealListViewController: UIViewController {
         
         mealTableView.delegate = self
         mealTableView.dataSource = self
+        title = "Recipies"
         
         meals.getData {
             DispatchQueue.main.async {

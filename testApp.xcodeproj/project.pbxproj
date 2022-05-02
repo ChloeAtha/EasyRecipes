@@ -23,6 +23,7 @@
 		BD8B4C9A281F87100030153E /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4C99281F87100030153E /* MealDetailViewController.swift */; };
 		BD8B4C9C28202A650030153E /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4C9B28202A650030153E /* Meals.swift */; };
 		BD8B4CA228202E800030153E /* Mealss.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4CA128202E800030153E /* Mealss.swift */; };
+		BD8B4CA4282050810030153E /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B4CA3282050810030153E /* RandomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		BD8B4C99281F87100030153E /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
 		BD8B4C9B28202A650030153E /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 		BD8B4CA128202E800030153E /* Mealss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mealss.swift; sourceTree = "<group>"; };
+		BD8B4CA3282050810030153E /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				BD8B4CA128202E800030153E /* Mealss.swift */,
 				BD4D57FE281DE64F00DCE06A /* EntryViewController.swift */,
 				BD4D5800281DE65800DCE06A /* NotesViewController.swift */,
+				BD8B4CA3282050810030153E /* RandomViewController.swift */,
 				BD4D57F0281DE55000DCE06A /* Main.storyboard */,
 				BD4D57F3281DE55200DCE06A /* Assets.xcassets */,
 				BD4D57F5281DE55200DCE06A /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				BD8B4C9C28202A650030153E /* Meals.swift in Sources */,
 				BD4D57EF281DE55000DCE06A /* ViewController.swift in Sources */,
 				BD8B4C98281F840A0030153E /* MealListViewController.swift in Sources */,
+				BD8B4CA4282050810030153E /* RandomViewController.swift in Sources */,
 				BD4D5801281DE65800DCE06A /* NotesViewController.swift in Sources */,
 				BD8B4CA228202E800030153E /* Mealss.swift in Sources */,
 				BD4D5829281F125E00DCE06A /* Drinks.swift in Sources */,

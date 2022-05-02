@@ -15,11 +15,11 @@ class Drinks {
     
     let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     var alphabetIndex = 0
-    
     let urlBase = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
     var urlString = ""
     var drinkArray: [Drink] = []
     var isFetching = false
+    
     
     func getData(completed: @escaping ()->()) {
         guard !isFetching else {
@@ -46,7 +46,7 @@ class Drinks {
             }
             do {
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
-                 self.drinkArray += returned.drinks
+                self.drinkArray += returned.drinks
             } catch {
                 print("JSON error: \(error.localizedDescription)")
             }
