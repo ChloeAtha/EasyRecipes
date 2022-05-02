@@ -26,7 +26,7 @@ class ListViewController: UIViewController, UITextFieldDelegate {
         
         tableView.delegate = self
         tableView.dataSource = self
-        field.delegate = self
+//        field.delegate = self
         drinks.getData {
             DispatchQueue.main.async {
                 self.tableView.reloadData()

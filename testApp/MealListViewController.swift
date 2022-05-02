@@ -8,28 +8,52 @@
 import UIKit
 
 class MealListViewController: UIViewController {
+    
     @IBOutlet weak var mealTableView: UITableView!
     
-    var meals = ["meal 1", "meal 2"]
+    var meals = Meals()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         mealTableView.delegate = self
         mealTableView.dataSource = self
+        
+        meals.getData {
+            DispatchQueue.main.async {
+                self.mealTableView.reloadData()
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetailMeal" {
+            let destination = segue.destination as! MealDetailViewController
+            let selectedIndexPath = mealTableView.indexPathForSelectedRow!
+            destination.meal = meals.mealArray[selectedIndexPath.row]
+        }
     }
 }
+    
 
 extension MealListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return meals.count
+        return meals.mealArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celll = tableView.dequeueReusableCell(withIdentifier: "Celll", for: indexPath)
-        celll.textLabel?.text = meals[indexPath.row]
+        if indexPath.row == meals.mealArray.count-1 && meals.alphabetIndex < meals.alphabet.count {
+            meals.getData {
+                DispatchQueue.main.async {
+                    self.mealTableView.reloadData()
+                }
+            }
+        }
+        celll.textLabel?.text = meals.mealArray[indexPath.row].strMeal
         return celll
     }
 }
+
 
 
